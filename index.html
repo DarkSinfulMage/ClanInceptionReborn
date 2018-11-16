@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+		<script type="text/javascript" src="javascripts/jquery-min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery-ui-min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.xcolor.min.js"></script>
+		<script type="text/javascript" src="javascripts/handlebars-v4.0.12.js"></script>
+		<script type="text/javascript" src="javascripts/utility.js"></script>
+		<script type="text/javascript" src="javascripts/encountertext.js"></script>
+		<script type="text/javascript" src="javascripts/storylinehandler.js"></script>
+		<script type="text/javascript" src="javascripts/sex.js"></script>
+		<script type="text/javascript" src="javascripts/avatars.js"></script>
+		<script type="text/javascript" src="javascripts/player.js"></script>
+		<script type="text/javascript" src="javascripts/rival.js"></script>
+		<script type="text/javascript" src="javascripts/boss.js"></script>
+		<script type="text/javascript" src="javascripts/people.js"></script>
+		<script type="text/javascript" src="javascripts/drawfigure.js"></script>
+		<script type="text/javascript" src="javascripts/camp.js"></script>
+		<script type="text/javascript" src="javascripts/io.js"></script>
+		<script type="text/javascript" src="javascripts/wander.js"></script>
+		<script type="text/javascript" src="javascripts/battle.js"></script>
+		<script type="text/javascript" src="javascripts/train.js"></script>
+		<script type="text/javascript" src="javascripts/craft.js"></script>
+		<script type="text/javascript" src="javascripts/round.js"></script>
+		<script type="text/javascript" src="javascripts/start.js"></script>
+		<script type="text/javascript" src="javascripts/cycle-min.js"></script>
+		<script type="text/javascript" src="javascripts/loadsave.js"></script>
+		<script type="text/javascript" src="javascripts/main.js"></script>
+		<script type="text/javascript" src="javascripts/woman.js"></script>
+		<script type="text/javascript" src="javascripts/items.js"></script>
+		<script type="text/javascript" src="javascripts/thoth.js"></script>
+		<script type="text/javascript" src="javascripts/leader.js"></script>
+		<script type="text/javascript" src="javascripts/storylines.js"></script>
+		
+		<script type="text/javascript" src="javascripts/dysphoria.js"></script>
+		
+		<script type="text/javascript" src="javascripts/help.js"></script>
+		<script type="text/javascript" src="javascripts/gamearea.js"></script>
+		<script type="text/javascript" src="javascripts/inventory.js"></script>
+		<script type="text/javascript" src="javascripts/demona.js"></script>
+		<script type="text/javascript" src="javascripts/anhk.js"></script>	
+		
+		<link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+  </head>
+  <body onmousedown="return false;">
+    <div class="main">
+      <span class="canvas-container">
+  		  <canvas id="player_avatar" width="180" height="400"></canvas>
+      </span>
+      <span class="center-column">
+        <div class="stats hidden">
+          <div class="stat-container">
+            <div id="submissiveness" class="stat-bar-container"></div>
+            <span class="stat-text">Submissiveness</span>
+            <span class="stat-text stat-text--right">Dominance</span>
+          </div>
+          <div class="stat-container">
+            <div id="domesticity" class="stat-bar-container"></div>
+            <span class="stat-text">Domesticity</span>
+            <span class="stat-text stat-text--right">Adventurousness</span>
+          </div>
+          <div class="stat-container">
+            <div id="maternalism" class="stat-bar-container"></div>
+            <span class="stat-text">Maternal Instinct</span>
+            <span class="stat-text stat-text--right">Paternal Instinct</span>
+          </div>
+          <div class="stat-container">
+            <div id="allure" class="stat-bar-container"></div>
+            <span class="stat-text">Allure</span>
+            <span class="stat-text stat-text--right">Lustfulness</span>
+          </div>
+          <div class="stat-container">
+            <div id="orientation" class="stat-bar-container"></div>
+            <span class="stat-text">Attracted to &#9794;</span>
+            <span class="stat-text stat-text--right">Attracted to &#9792;</span>
+          </div>
+          <div class="stat-container">
+            <div id="changra" class="changra-container"></div>
+            <span class="stat-text">Your Changra: <span id="player_changra"></span></span>
+            <span id="rcchangra" class="stat-text stat-text--right">Rival's Changra: <span id="rival_changra"></span></span>
+          </div>
+          <div class="stat-container">
+            <div id="women" class="changra-container"></div>
+            <span class="stat-text">Your Women: <span id="player_women"></span></span>
+            <span id="rcwomen" class="stat-text stat-text--right">Rival's Women: <span id="rival_women"></span></span>
+          </div>
+          <div class="stat-container" id="otherstats">
+            <div id="awareness" class="changra-container"></div>
+            <span class="stat-text">Your Perception: <span id="player_perception"></span></span>
+						<span id="rcexperience" class="stat-text stat-text--right">Your Experience: <span id="player_experience"></span></span>				
+          </div>
+          <div class="stat-container" id="goods">
+						<font size="-1"><b>Camp Details</b></font><br/>
+						<span class="stat-text-noh">Children: <span id="player_kids"></span></span>								
+						<span class="stat-text-noh" id="metal_label">Metal: <span id="player_metal"></span></span>	
+            <span class="stat-text-noh">Goods: <span id="player_goods"></span></span>		
+          </div>					
+        </div>
+
+    		<div id="output"></div>
+      </span>
+      <span class="canvas-container">
+  		  <canvas id="rival_avatar" width="180" height="400"></canvas>
+      </span>
+    </div>
+  </body>
+</html>

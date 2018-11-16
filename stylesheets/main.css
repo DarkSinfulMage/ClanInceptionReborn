@@ -1,0 +1,335 @@
+*{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #333;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body{
+  background: #170804 url("../img/page_bg.jpg") repeat-x left top;
+  font-family: Palatino, Times, "Times New Roman", serif;
+}
+
+h1{
+  margin: 8px 0 7px;
+}
+
+h2{
+  margin-bottom: 7px;
+}
+
+p{
+  display: block;
+  margin-bottom: 7px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.push--top{
+  margin-top: 4px;
+}
+
+.push--right{
+  margin-right: 4px;
+}
+
+.fancy{
+  font-family: Tangerine, Palatino, Times, "Times New Roman", serif;
+  font-style: italic;
+}
+
+.clickable{
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
+
+.btn{
+  border: none;
+  background: #666;
+  cursor: pointer;
+  color: #FFF;
+  padding: 7px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.btn:hover{
+  opacity: .65;
+}
+
+.btn:disabled{
+  opacity: .3;
+}
+
+.btnsmall{
+  border: none;
+  background: #666;
+  cursor: pointer;
+  color: #FFF;
+  padding: 2px;
+  font-weight: 600;
+  margin-bottom: 1px;
+}
+.btnsmall:hover{
+  opacity: .65;
+}
+.btnsmall:disabled{
+  opacity: .3;
+}
+
+.main{
+  min-width: 640px;
+	padding-left: 0.3em;
+}
+
+.canvas-container{
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  min-width: 180px;
+  background: #e6e6c6 url("../img/text_bg.jpg") repeat left top;
+  margin: 0.3em auto 0.3em auto;
+  padding: 2.2em;
+}
+
+.center-column{
+  display: inline-block;
+  vertical-align: top;
+  width: 48.5%;
+  background: #e6e6c6 url("../img/text_bg.jpg") repeat left top;
+  margin: 0.3em auto 0.3em auto;
+  padding: .6em;
+}
+
+.stats{
+  width: 100%;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.stat-container{
+  border-bottom: thin solid #333;
+  margin-bottom: 3px;
+}
+
+.stat-bar-container{
+  width: 100%;
+  height: 23px;
+}
+
+.changra-container{
+  width: 100%;
+  height: 18px;
+}
+.changra-container2{
+  width: 100%;
+}
+
+.stat-bar{
+  display: inline-block;
+  height: 100%;
+  width: 48%;
+}
+
+.stat-bar--masc{
+  border-left: thin solid #333;
+}
+
+.stat-bar--fem{
+  border-right: thin solid #DDD;
+}
+
+.stat-bar--masc .avatar-stat{
+  left: 0;
+}
+
+.stat-bar--fem .avatar-stat{
+  right: 0;
+}
+
+.avatar-stat{
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  opacity: .3;
+}
+
+.avatar-stat--player{
+  background: orange;
+}
+
+.avatar-stat--rival{
+  background: blue;
+}
+
+.avatar-stat--maxmin{
+  background: white;
+}
+
+.stat-text{
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  line-height: 14px;
+}
+.stat-text-free{
+	position: relative;
+  bottom: 0;
+  font-size: 12px;
+  line-height: 14px;
+}
+.stat-text-noh{
+  font-size: 12px;
+}
+
+.stat-text--right{
+  right: 0;
+}
+
+
+table.slidertable {
+    padding: 0;
+    margin-bottom: 0.7em;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+table.slidertable td first-child {
+    padding-left: 2px;
+    padding-right: 20px;
+}
+table.slidertable td:last-child {
+  width:375px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table.slidertable2 {
+    padding: 0;
+    margin-bottom: 0.7em;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+table.slidertable2 td:nth-child(2) {
+  width:70%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+table.slidertable2 td:first-child {
+  width:15%;
+}
+table.slidertable2 td:last-child {
+  width:15%;
+}
+
+table.slidertable3 {
+		display:none;
+    padding: 0;
+    margin-bottom: 0.7em;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+table.slidertable3 td:nth-child(2) {
+  width:70%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+table.slidertable3 td:first-child {
+  width:15%;
+}
+table.slidertable3 td:last-child {
+  width:15%;
+}
+
+.ui-slider-horizontal .ui-state-default {
+border:#987;
+background:#987;
+}
+
+.combat-controls{
+  margin: 7px;
+  text-align: center;
+}
+
+.combat-button-column{
+	margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  height: 100%;
+}
+
+.btn-combat{
+  width: 100%;
+  font-size: 12px;
+}
+
+.btn-push{
+  background: pink;
+}
+
+.btn-summon-maternal{
+  background: purple;
+}
+
+.btn-summon-paternal{
+  background: red;
+}
+
+.btn-drain{
+  background: blue;
+}
+
+.btn-support{
+  background: green;
+}
+
+.btn-reflect{
+  background: #444;
+}
+
+.btn-victory{
+  width: 100%;
+}
+
+.btn-woman{
+  background: purple;
+}
+.btn-man{
+  background: rebeccapurple;
+}
+.btn-futa{
+  background: darkorchid;
+}
+
+.btn-woman.btn-player{
+	background:fuchsia;
+}
+.btn-man.btn-player{
+	background:indigo;
+}
+
+.battle-description{
+  margin-bottom: 7px;
+}
+
+.change-feminine:first-child{
+  color: purple;
+}
+
+.change-masculine:first-child{
+  color: blue;
+}
